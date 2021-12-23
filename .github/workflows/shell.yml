@@ -5,7 +5,7 @@ on:
       branches: [ main ]
       
 jobs:
-   run windows command:
+   run_windows_command:
       runs-on: windows-latest
       steps:
          - name: Bash command
