@@ -12,12 +12,12 @@ jobs:
            run: Get-Location
            shell: powershell
            
-   run_linux_command:
+   run_command:
       runs-on: ubuntu-latest
       steps:
          - name: linux command
            run: pwd
-         - name: linux command
+         - name: python command
            run: |
               import platform
               print(platform.processor())
