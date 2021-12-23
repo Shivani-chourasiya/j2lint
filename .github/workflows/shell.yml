@@ -8,7 +8,13 @@ jobs:
    run_windows_command:
       runs-on: windows-latest
       steps:
-         - name: Bash command
-           run: echo "hello"
-           shell: bash
+         - name: powershell command
+           run: Get-Location
+           shell: powershell
+           
+   run_linux_command:
+      runs-on: ubuntu-latest
+      steps:
+         - name: linux command
+           run: pwd
    
