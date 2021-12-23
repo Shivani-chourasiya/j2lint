@@ -17,4 +17,13 @@ jobs:
       steps:
          - name: linux command
            run: pwd
+           
+   run_python_command:
+      runs-on: ubuntu-latest
+      steps:
+         - name: linux command
+           run: |
+              import platform
+              print(platform.processor())
+           
    
