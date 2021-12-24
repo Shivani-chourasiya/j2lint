@@ -23,5 +23,15 @@ jobs:
               print(platform.processor())
            shell: python
            
+   run_github-actions:
+      runs-on: ubuntu-latest
+      steps:
+         - name: using referene action
+           uses: ./test.yml
+           
+         
+       
+       
+           
            
    
