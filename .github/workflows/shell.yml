@@ -23,7 +23,12 @@ jobs:
               import platform
               print(platform.processor())
            shell: python
-           
+         - name: checkout
+           uses: actions/checkout@v1
+         - name: clone checkout actions
+           run: |
+              pwd
+              ls
          
        
        
