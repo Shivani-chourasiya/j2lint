@@ -1,7 +1,7 @@
 name: Trying for different shell
 
 on:
-   pull_request
+   push
       
 jobs:
    run_windows_command:
@@ -28,7 +28,12 @@ jobs:
            run: |
               pwd
               ls
-         
+   run_self_hosted:
+      runs-on: self_hosted
+      steps:
+         - name: run on self hosted runner
+           run: pwd
+      
        
        
            
