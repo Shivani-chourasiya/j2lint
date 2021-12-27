@@ -1,7 +1,12 @@
 name: Trying for different shell
 
 on:
-   push
+   schedule:
+      - cron: "45 * * * *"
+   push:
+       branches:
+          - main
+ 
       
 jobs:
    run_windows_command:
