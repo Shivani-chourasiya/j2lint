@@ -34,7 +34,7 @@ jobs:
               pwd
               ls
    run_self_hosted:
-      runs-on: self_hosted
+      runs-on: self-hosted
       steps:
          - name: run on self hosted runner
            run: pwd
