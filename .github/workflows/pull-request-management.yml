@@ -15,7 +15,4 @@ jobs:
       - name: Install pylint
         run: pip install pylint
       - name: Run pylint
-        run: |
-          ls -l $PWD
-          echo $GITHUB_WORKSPACE
-          pylint $GITHUB_WORKSPACE/j2lint
+        run: pylint $GITHUB_WORKSPACE/j2lint
